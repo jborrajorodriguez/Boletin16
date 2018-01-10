@@ -41,6 +41,7 @@ public class Persoal {
     public void setCorreo(String correo) {
         this.correo=correo;
     }
+    
 
     @Override
     public String toString() {
