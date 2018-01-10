@@ -1,13 +1,13 @@
 package boletin16;
 
 import com.Juan.persoas.Persoal;
-
+import com.juan.nota.criterioNota;
 /**
  * @author Juan Borrajo Rodriguez Nº5937
  */
 public class Academia {
     private static int numReferencia=2018;
-    private int nota;
+    private float nota;
     private String nome;
     private Persoal alum;
 
@@ -23,14 +23,14 @@ public class Academia {
      * @param nome
      * @param alum 
      */
-    public Academia(int nota,String nome,Persoal alum) {
+    public Academia(float nota,String nome,Persoal alum) {
         numReferencia++;
         this.nota=nota;
         this.nome=nome;
         this.alum=alum;
     }
 
-    public int getNota() {
+    public float getNota() {
         return nota;
     }
 
@@ -53,10 +53,17 @@ public class Academia {
     public void setAlum(Persoal alum) {
         this.alum=alum;
     }
+    public float añadirNota(){
+        criterioNota.calculoDeNotas();
+        
+        return nota;
+    }
+    
+ 
 
     @Override
     public String toString() {
-        return ("Numero de referencia : "+numReferencia+"\nNota : "+nota+"\n "+alum);
+        return ("Nome do Alumno: "+nome+"\nNumero de referencia : "+numReferencia+"\nNota : "+nota+"\n"+alum);
     }
 
     
