@@ -20,6 +20,7 @@ public class Boletin16 {
         alumno1.setNome(JOptionPane.showInputDialog("Introduce nombre del alumno"));
         alumno.setCorreo(JOptionPane.showInputDialog("Introduce el mail del alumno"));
         alumno.setTelefono(Integer.parseInt(JOptionPane.showInputDialog("Introducir telefono")));
+        //alumno1.notaProfe();
         alumno1.añadirNota();
         alumno1.setAlum(alumno);
         JOptionPane.showMessageDialog(null,alumno1.toString());
