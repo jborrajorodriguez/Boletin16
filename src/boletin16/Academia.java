@@ -2,6 +2,8 @@ package boletin16;
 
 import com.Juan.persoas.Persoal;
 import com.juan.nota.criterioNota;
+import javax.swing.JOptionPane;
+import validar.ValidacionNumeros;
 /**
  * @author Juan Borrajo Rodriguez Nº5937
  */
@@ -54,10 +56,11 @@ public class Academia {
         this.alum=alum;
     }
     public float añadirNota(){
-        criterioNota.calculoDeNotas();
+        nota=criterioNota.calculoDeNotas(10,1);
         
         return nota;
     }
+    
     
  
 
